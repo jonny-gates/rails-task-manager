@@ -3,7 +3,8 @@
 <% @tasks.each do |task| %>
   <h2><%= link_to task.title, task_path(task) %></h2>
   <p><%= task.details %></p>
+  <%= link_to "delete", task_path(task), method: :delete, data: { confirm: "Are you c-c-c-crazy!?" } %>
   <hr>
 <% end %>
 
-<%= link_to "Create new item", tasks_new_path %>
+<%= link_to "Create new item", new_task_path %>

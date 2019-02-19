@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # Read all tasks
-  # get 'tasks', to: 'tasks#index'
+  get 'tasks', to: 'tasks#index'
 
   # # Read the details of one restaurant
   # get 'tasks/:id', to: 'tasks#show'
